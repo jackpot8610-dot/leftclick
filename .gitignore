@@ -1,0 +1,63 @@
+# 전체 기본 제외
+*
+
+# 폴더 구조는 유지
+!*/
+
+# Git 관리 파일
+!.gitignore
+!README.md
+!requirements.txt
+
+# Python 코드만 허용
+!*.py
+
+# Python 프로젝트 설정 파일 허용
+!*.toml
+!*.ini
+!*.yml
+!*.yaml
+
+# 단, 민감정보/자동생성 파일 제외
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+*.env
+credentials*
+token*
+*token*
+secrets*
+session_token_store.py
+
+# DB / 로그 / 임시파일 제외
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.tmp
+*.temp
+
+# 문서/엑셀/PPT/PDF 제외
+*.pdf
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.xlsm
+*.doc
+*.docx
+*.csv
+*.zip
+
+# VS Code / OS 파일 제외
+.vscode/
+Thumbs.db
+Desktop.ini
+
+# 가상환경 제외
+venv/
+.venv/
+env/
